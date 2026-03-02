@@ -1,14 +1,14 @@
 class Calculadora:
-    # doctest para probar si funcona
+    # doctest para probar si funciona
     """
     >>> Calculadora.suma(2, 5)
     7
     >>> Calculadora.resta(2, 5)
     -3
-    >>> Calculadora.multi(2, 5)
+    >>> Calculadora.multiplicacion(2, 5)
     10
-    >>> Calculadora.divison(6, 2)
-    3
+    >>> Calculadora.division(6, 2)
+    3.0
     """
 
     def suma(x,y):
@@ -17,7 +17,7 @@ class Calculadora:
     def resta(x,y):
         return x - y
 
-    def multi(x,y):
+    def multiplicacion(x,y):
         return x * y
 
     def division(x,y):
