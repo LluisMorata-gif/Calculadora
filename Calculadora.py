@@ -7,7 +7,7 @@ class Calculadora:
     -3
     >>> Calculadora.multi(2, 5)
     10
-    >>> Calculadora.suma(6, 2)
+    >>> Calculadora.divison(6, 2)
     3
     """
 
