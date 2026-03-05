@@ -2,10 +2,10 @@ import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QGridLayout, QPushButton, QLineEdit
 from PyQt6.QtCore import Qt
 
-class RechnerSchild(QWidget):
+class pantalla(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Rechner Schild (PyQt6)")
+        self.setWindowTitle("calculadora")
         self.setFixedSize(300, 400)
 
         layout = QGridLayout()
@@ -38,7 +38,7 @@ class RechnerSchild(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    fenster = RechnerSchild()
+    fenster = pantalla()
     fenster.show()
     sys.exit(app.exec())
 
