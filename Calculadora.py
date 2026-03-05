@@ -11,16 +11,16 @@ class Calculadora:
     3.0
     """
 
-    def suma(x,y):
+    def __add__(x,y):
         return x + y
 
-    def resta(x,y):
+    def __sub__(x,y):
         return x - y
 
-    def multiplicacion(x,y):
+    def __mul__(x,y):
         return x * y
 
-    def division(x,y):
+    def __truediv__(x,y):
         return x / y
 
 if __name__ == '__main__':
