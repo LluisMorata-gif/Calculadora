@@ -1,13 +1,13 @@
 class Calculadora:
     # doctest para probar si funciona
     """
-    >>> Calculadora.suma(2, 5)
+    >>> Calculadora.__add__(2, 5)
     7
-    >>> Calculadora.resta(2, 5)
+    >>> Calculadora.__sub__(2, 5)
     -3
-    >>> Calculadora.multiplicacion(2, 5)
+    >>> Calculadora.__mul__(2, 5)
     10
-    >>> Calculadora.division(6, 2)
+    >>> Calculadora.__truediv__()(6, 2)
     3.0
     """
 
