@@ -24,7 +24,9 @@ class Calculadora:
         return self.a * self.b
 
     def __truediv__(self):
-        return self.a / self.b
+        if self.b != 0:
+            return self.a / self.b
+        raise ZeroDivisionError
 
 if __name__ == '__main__':
     import doctest
