@@ -10,18 +10,21 @@ class Calculadora:
     >>> Calculadora.__truediv__()(6, 2)
     3.0
     """
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-    def __add__(x,y):
-        return x + y
+    def __add__(self):
+        return self.a + self.b
 
-    def __sub__(x,y):
-        return x - y
+    def __sub__(self):
+        return self.a - self.b
 
-    def __mul__(x,y):
-        return x * y
+    def __mul__(self):
+        return self.a * self.b
 
-    def __truediv__(x,y):
-        return x / y
+    def __truediv__(self):
+        return self.a / self.b
 
 if __name__ == '__main__':
     import doctest
