@@ -1,27 +1,32 @@
 class Calculadora:
     # doctest para probar si funciona
     """
-    >>> Calculadora.suma(2, 5)
+    >>> Calculadora.__add__(2, 5)
     7
-    >>> Calculadora.resta(2, 5)
+    >>> Calculadora.__sub__(2, 5)
     -3
-    >>> Calculadora.multiplicacion(2, 5)
+    >>> Calculadora.__mul__(2, 5)
     10
-    >>> Calculadora.division(6, 2)
+    >>> Calculadora.__truediv__()(6, 2)
     3.0
     """
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-    def suma(x,y):
-        return x + y
+    def __add__(self):
+        return self.a + self.b
 
-    def resta(x,y):
-        return x - y
+    def __sub__(self):
+        return self.a - self.b
 
-    def multiplicacion(x,y):
-        return x * y
+    def __mul__(self):
+        return self.a * self.b
 
-    def division(x,y):
-        return x / y
+    def __truediv__(self):
+        if self.b != 0:
+            return self.a / self.b
+        raise ZeroDivisionError
 
 if __name__ == '__main__':
     import doctest
